@@ -26,3 +26,5 @@ Route::resource('mahasiswas', MahasiswaController::class);
 Route::get('mahasiswas/nilai/{Nim}', [MahasiswaController::class, 'khs']);
 
 Route::resource('articles', ArticleController::class);
+
+Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf']);
